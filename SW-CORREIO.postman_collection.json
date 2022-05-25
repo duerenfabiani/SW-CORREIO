@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "b57f7bb3-a1c6-481b-86b9-5e3d14683a36",
+		"name": "SW-CORREIO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21120277"
+	},
+	"item": [
+		{
+			"name": "Listar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/SW-CORREIO/servico/compra/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SW-CORREIO",
+						"servico",
+						"compra",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/SW-CORREIO/servico/compra/remove/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SW-CORREIO",
+						"servico",
+						"compra",
+						"remove",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"nome\": \"dueren\",\r\n    \"endereco\": \"Rua Senador Alberto Pasqualini, 205, Vanini\",\r\n    \"valor\": 52.00,\r\n    \"cepOrigem\": \"99010041\",\r\n    \"cepDestino\": \"99320000\",\r\n    \"servico\": \"pac\",\r\n    \"altura\": 18,\r\n    \"frete\": \"93,90\",\r\n    \"prazo\": \"8\",\r\n    \"largura\": 18,\r\n    \"comprimento\": 18,\r\n    \"peso\": 18,\r\n    \"formato\": 1,\r\n    \"diametro\": 18\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/SW-CORREIO/servico/compra",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SW-CORREIO",
+						"servico",
+						"compra"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "criar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"servico\": \"PAC\",\r\n    \"cepOrigem\": \"99290000\",\r\n    \"cepDestino\": \"99320000\",\r\n    \"peso\": 18,\r\n    \"formato\": 1,\r\n    \"comprimento\": 18,\r\n    \"altura\": 18,\r\n    \"diametro\": 18,\r\n    \"largura\": 18\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/SW-CORREIO/servico/compra",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SW-CORREIO",
+						"servico",
+						"compra"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
